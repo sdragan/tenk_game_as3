@@ -2,15 +2,14 @@ package
 {
 
 import flash.display.Sprite;
-import flash.text.TextField;
 
+[SWF(width="640", height="480", frameRate="60", backgroundColor="#000000")]
 public class Main extends Sprite
 {
     public function Main()
     {
-        var textField:TextField = new TextField();
-        textField.text = "Hello, World";
-        addChild(textField);
+        var gamefield: Gamefield = new Gamefield();
+        addChild(gamefield);
     }
 }
 }
