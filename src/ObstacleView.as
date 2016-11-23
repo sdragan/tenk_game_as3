@@ -13,13 +13,13 @@ public class ObstacleView extends Sprite
         this.rect = rect;
         this.appearance = appearance;
         this.addChild(appearance);
+        appearance.x = 0;
+        appearance.y = 0;
     }
 
     public function update():void {
         this.x = rect.x;
         this.y = rect.y;
-
-        trace(x, y);
     }
 }
 }
