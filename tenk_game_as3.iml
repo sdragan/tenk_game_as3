@@ -4,6 +4,14 @@
     <configurations>
       <configuration name="tenk_game_as3" pure-as="true" main-class="Main" output-file="Main.swf" output-folder="$MODULE_DIR$/out">
         <dependencies target-player="21.0">
+          <entries>
+            <entry library-id="c4ae7e18-817f-4441-b37c-6fddb11ac132">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="afca3a9d-33d7-4428-a74b-494fdd0305c1">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
           <sdk name="air_sdk_21" />
         </dependencies>
         <compiler-options>
@@ -25,5 +33,25 @@
     </content>
     <orderEntry type="jdk" jdkName="air_sdk_21" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="c4ae7e18-817f-4441-b37c-6fddb11ac132" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/greensock.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="afca3a9d-33d7-4428-a74b-494fdd0305c1" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/assets.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
