@@ -31,12 +31,12 @@ public class Gamefield extends Sprite
     private const OBSTACLE_HEIGHT:int = 600;
     private const FG_WIDTH:int = 800;
     private const OBSTACLES_SHIFT_VALUE:int = Constants.SCREEN_WIDTH * 1.5;
-    private const GRAVITY:Number = 360;
+    private const GRAVITY:Number = 420;
     private const CHARACTER_INITIAL_X:int = 80;
     private const CHARACTER_INITIAL_Y:int = Constants.SCREEN_HEIGHT / 2.5;
     private const CHARACTER_SIZE:int = 30;
-    private const CHARACTER_MAX_FALLING_SPEED_Y:Number = -300;
-    private const CHARACTER_JUMP_SPEED:Number = 220;
+    private const CHARACTER_MAX_FALLING_SPEED_Y:Number = -400;
+    private const CHARACTER_JUMP_SPEED:Number = 250;
 
     private const GAMESTATE_MENU_PRE:int = 0;
     private const GAMESTATE_NORMAL:int = 1;
@@ -292,6 +292,7 @@ public class Gamefield extends Sprite
         scoreHUD.visible = true;
         addInputListeners();
         gameState = GAMESTATE_NORMAL;
+        characterSpeedY = 0;
     }
 
     private function jump():void
